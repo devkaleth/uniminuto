@@ -19,12 +19,18 @@ public class Ejercicio8 {
     // --- DEFINICIÓN DE LOS RECORDS ---
     public record RegistroEstudiante(
             String nombre,
-            String apellidos,
-            double[] calificaciones,
+            String apellido,
+            double cali
+            RegistroAsignatura Matematica,
             RegistroFecha fechaNac
     ) {}
 
 
+    public record RegistroAsignatura (
+            String nombreAsig,
+            double[] calificaciones,
+            String profesor
+    ){}
     public record RegistroFecha(byte dia, byte mes, short anio) {}
 
 
